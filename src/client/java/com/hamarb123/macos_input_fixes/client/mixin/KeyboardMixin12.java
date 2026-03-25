@@ -7,10 +7,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import com.hamarb123.macos_input_fixes.client.Common;
+import net.minecraft.client.KeyboardHandler;
 
-import net.minecraft.client.Keyboard;
-
-@Mixin(Keyboard.class)
+@Mixin(KeyboardHandler.class)
 public class KeyboardMixin12
 {
 	//@Inject(at = @At("HEAD"), method = "onKey(JIIII)V", cancellable = true)

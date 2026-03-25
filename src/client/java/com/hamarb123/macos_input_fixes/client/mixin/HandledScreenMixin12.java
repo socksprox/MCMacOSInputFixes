@@ -6,10 +6,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import com.hamarb123.macos_input_fixes.client.Common;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 
-import net.minecraft.client.gui.screen.ingame.HandledScreen;
-
-@Mixin(HandledScreen.class)
+@Mixin(AbstractContainerScreen.class)
 public class HandledScreenMixin12
 {
 	//`keyPressed(III)Z` is the intermediary name for 1.14/1.15, and `method_25404(III)Z` is for 1.16+

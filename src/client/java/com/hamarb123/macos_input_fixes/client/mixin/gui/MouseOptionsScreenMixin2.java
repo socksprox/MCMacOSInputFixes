@@ -1,6 +1,7 @@
 package com.hamarb123.macos_input_fixes.client.mixin.gui;
 
 import java.lang.reflect.Array;
+import net.minecraft.client.gui.screens.options.MouseSettingsScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArgs;
@@ -9,9 +10,7 @@ import org.spongepowered.asm.mixin.injection.invoke.arg.Args;
 import com.hamarb123.macos_input_fixes.client.FabricReflectionHelper;
 import com.hamarb123.macos_input_fixes.client.ModOptions;
 
-import net.minecraft.client.gui.screen.option.MouseOptionsScreen;
-
-@Mixin(MouseOptionsScreen.class)
+@Mixin(MouseSettingsScreen.class)
 public class MouseOptionsScreenMixin2
 {
 	//ModifyArgs targets for init with yarn mappings:

@@ -6,10 +6,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import com.hamarb123.macos_input_fixes.client.Common;
+import net.minecraft.client.gui.screens.options.MouseSettingsScreen;
 
-import net.minecraft.client.gui.screen.option.MouseOptionsScreen;
-
-@Mixin(MouseOptionsScreen.class)
+@Mixin(MouseSettingsScreen.class)
 public class MouseOptionsScreenMixin9
 {
 	//sets the modifyAddAllParameter() flag, which is checked and reset in ButtonListWidgetMixin1
